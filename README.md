@@ -1,43 +1,51 @@
-# Astro Starter Kit: Minimal
+# Bouldern mit Kindern 🧗
 
-```sh
-npm create astro@latest -- --template minimal
+SEO-optimized static website about bouldering with kids. Built with Astro and Tailwind CSS, deployed on GitHub Pages.
+
+**Live:** [https://berndbot.github.io/boulder-mit-kindern/](https://berndbot.github.io/boulder-mit-kindern/)
+
+## Pages
+
+| Page | URL | Description |
+|------|-----|-------------|
+| Homepage | `/` | Overview, hero section, teasers, FAQ |
+| Ab welchem Alter? | `/ab-welchem-alter/` | Age guide for kids bouldering (2-13+) |
+| Vorteile | `/vorteile/` | Benefits: motor skills, confidence, focus |
+| Ausrüstung | `/ausruestung/` | Equipment guide: shoes, chalk, clothing |
+| Tipps für Eltern | `/tipps-fuer-eltern/` | Parent tips: motivation, safety, mistakes |
+| Boulderhallen finden | `/boulderhallen-finden/` | Finding kid-friendly bouldering gyms |
+| Impressum | `/impressum/` | Legal notice |
+| Datenschutz | `/datenschutz/` | Privacy policy |
+
+## Tech Stack
+
+- **Astro** – Static site generator
+- **Tailwind CSS v4** – Utility-first CSS
+- **@astrojs/sitemap** – Auto-generated sitemap
+- **GitHub Pages** – Hosting via GitHub Actions
+
+## Development
+
+```bash
+npm install
+npm run dev     # Start dev server
+npm run build   # Build static site
+npm run preview # Preview build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deployment
 
-## 🚀 Project Structure
+Automatic deployment via GitHub Actions on push to `main`. The workflow builds the Astro site and deploys to GitHub Pages.
 
-Inside of your Astro project, you'll see the following folders and files:
+## SEO Features
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Semantic HTML with proper heading hierarchy (H1, H2, H3)
+- Meta titles and descriptions for every page
+- Open Graph and Twitter Card meta tags
+- Schema.org JSON-LD markup (WebSite + Article)
+- XML Sitemap (`/sitemap-index.xml`)
+- robots.txt
+- Internal linking between all content pages
+- Breadcrumb navigation
+- Responsive design (mobile-first)
+- Canonical URLs
