@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const siteBase = import.meta.env.BASE_URL;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Tipps für Eltern: Bouldern mit Kindern richtig begleiten",
+  "description": "Praktische Tipps für Eltern zum Bouldern mit Kindern: Motivation, Sicherheit, häufige Fehler und wie der Bouldertag zum Erfolg wird.",
+  "author": { "@type": "Organization", "name": "Bouldern mit Kindern" },
+  "publisher": { "@type": "Organization", "name": "Bouldern mit Kindern" },
+  "inLanguage": "de"
+};
+---
+
+<BaseLayout
+  title="Tipps für Eltern: Bouldern mit Kindern – Motivation & Sicherheit"
+  description="Praktische Tipps für Eltern zum Bouldern mit Kindern: So motivierst du dein Kind, sorgst für Sicherheit und machst jeden Besuch zum Erlebnis."
+  schema={schema}
+>
+  <article class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-[var(--color-text-light)] mb-6">
+      <a href={`${siteBase}`} class="hover:text-[var(--color-primary)]">Start</a>
+      <span class="mx-2">›</span>
+      <span>Tipps für Eltern</span>
+    </nav>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Tipps für Eltern: Bouldern mit Kindern richtig begleiten</h1>
+
+    <p class="text-xl text-[var(--color-text-light)] mb-8">
+      Du möchtest mit deinem Kind bouldern gehen, bist aber unsicher, worauf du achten solltest? Kein Problem! Mit diesen Tipps wird der Boulderbesuch für die ganze Familie ein voller Erfolg.
+    </p>
+
+    <div class="prose prose-lg max-w-none">
+      <h2 class="text-2xl font-bold mt-10 mb-4">Vor dem ersten Besuch</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">📋 Vorbereitung ist alles</h3>
+      <p>
+        Ein bisschen Vorbereitung macht den ersten <strong>Boulderhallen-Besuch</strong> deutlich entspannter. Hier eine Checkliste:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Halle recherchieren:</strong> Hat die Halle einen Kinderbereich? Ab welchem Alter sind Kinder willkommen? Gibt es Kurse? Nutze <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a>, um passende Hallen in deiner Nähe zu finden.</li>
+        <li><strong>Öffnungszeiten checken:</strong> Manche Hallen haben spezielle Kinderzeiten oder Familiennachmittage – oft weniger voll und günstiger.</li>
+        <li><strong>Eintritt und Leihgebühren:</strong> Informiere dich vorab über Preise. Viele Hallen bieten Familientickets an.</li>
+        <li><strong>Regeln erklären:</strong> Besprich vorher die wichtigsten Hallenregeln mit deinem Kind (siehe unten).</li>
+        <li><strong>Erwartungen managen:</strong> Sag deinem Kind, dass es okay ist, wenn nicht alles gleich klappt. Der Spaß steht im Vordergrund!</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🎯 Die richtige Halle wählen</h3>
+      <p>
+        Nicht jede Boulderhalle ist gleich gut für Kinder geeignet. Achte auf:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Kinderbereich:</strong> Separate Bereiche mit niedrigeren Wänden und kindgerechten Routen</li>
+        <li><strong>Kinderkurse:</strong> Regelmäßige Angebote für verschiedene Altersgruppen</li>
+        <li><strong>Personal:</strong> Freundliches, kinderaffines Personal</li>
+        <li><strong>Sauberkeit:</strong> Gut gepflegte Matten und Griffe</li>
+        <li><strong>Umkleiden:</strong> Familienumkleiden sind ein Plus</li>
+      </ul>
+      <p>
+        Im <a href="https://climbdirectory.com" target="_blank" rel="noopener">Kletterhallenverzeichnis von ClimbDirectory</a> kannst du gezielt nach Hallen mit Kinderangeboten suchen und Bewertungen anderer Eltern lesen.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Sicherheit in der Boulderhalle</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">⚠️ Die wichtigsten Regeln für Kinder</h3>
+      <p>
+        Sicherheit geht vor – und das müssen auch Kinder verstehen. Erkläre deinem Kind diese Regeln:
+      </p>
+      <ol class="list-decimal pl-6 space-y-3">
+        <li>
+          <strong>Nicht unter anderen Kletterern stehen oder laufen.</strong> Das ist die Regel Nummer 1! Wenn jemand über dir klettert und fällt, kann es zu Verletzungen kommen.
+        </li>
+        <li>
+          <strong>Vor dem Abspringen schauen.</strong> Immer erst nach unten schauen, ob der Landebereich frei ist.
+        </li>
+        <li>
+          <strong>Kontrolliert abspringen.</strong> Nicht einfach fallen lassen, sondern bewusst abspringen und in den Knien landen.
+        </li>
+        <li>
+          <strong>Abstand halten.</strong> Nicht zu nah neben anderen Kletterern klettern.
+        </li>
+        <li>
+          <strong>Auf die Anweisungen des Personals hören.</strong> Die wissen, was sie tun!
+        </li>
+      </ol>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">👀 Aufsichtspflicht</h3>
+      <p>
+        Als Elternteil bist du für die Aufsicht verantwortlich. Das bedeutet:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Kleinkinder (2–5 Jahre):</strong> Direkt neben dem Kind bleiben, bereit zum Auffangen ("Spotten")</li>
+        <li><strong>Grundschulkinder (6–9 Jahre):</strong> Im Blickfeld bleiben, eingreifen wenn nötig</li>
+        <li><strong>Ältere Kinder (10+ Jahre):</strong> Können zunehmend selbstständig klettern, aber Aufsicht bleibt wichtig</li>
+      </ul>
+      <p>
+        <strong>Wichtig:</strong> "Spotten" bedeutet nicht, das Kind festzuhalten, sondern bereit zu sein, es im Notfall aufzufangen oder in die richtige Landeposition zu lenken. Stell dich leicht versetzt hinter dein Kind, mit den Händen in Hüfthöhe.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Motivation und Spaß</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🎮 Bouldern spielerisch gestalten</h3>
+      <p>
+        Besonders für jüngere Kinder ist der spielerische Ansatz entscheidend. Hier ein paar Ideen:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Farbspiele:</strong> "Klettere nur über blaue Griffe!" – einfach und macht Spaß</li>
+        <li><strong>Tierbilder:</strong> Manche Kinderbereiche haben Tier-Markierungen an den Griffen</li>
+        <li><strong>Schatzsuche:</strong> Verstecke einen kleinen Gegenstand am oberen Rand der Wand</li>
+        <li><strong>Traverse-Spiele:</strong> Seitlich an der Wand entlanghangeln – wer schafft die längste Strecke?</li>
+        <li><strong>Gemeinsam klettern:</strong> Klettere selbst neben deinem Kind – das motiviert ungemein!</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🏆 Richtig loben und ermutigen</h3>
+      <p>
+        Wie du dein Kind lobst, macht einen großen Unterschied:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Prozess loben, nicht Ergebnis:</strong> "Toll, wie du dich angestrengt hast!" statt nur "Super, du hast es geschafft!"</li>
+        <li><strong>Spezifisch loben:</strong> "Dein Fußwechsel war richtig gut!" statt allgemeines "Gut gemacht!"</li>
+        <li><strong>Kein Vergleich:</strong> Vergleiche dein Kind nicht mit anderen Kindern an der Wand</li>
+        <li><strong>Scheitern normalisieren:</strong> "Beim nächsten Mal probierst du es nochmal – das gehört dazu!"</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">😤 Umgang mit Frustration</h3>
+      <p>
+        Es wird Momente geben, in denen dein Kind frustriert ist. Ein Boulder, der einfach nicht gelingen will. Tränen an der Wand. Das ist normal und sogar ein wichtiger Lernprozess. So gehst du damit um:
+      </p>
+      <ol class="list-decimal pl-6 space-y-2">
+        <li>Gefühle anerkennen: "Ich verstehe, dass das frustrierend ist."</li>
+        <li>Pause anbieten: "Wollen wir kurz Pause machen und einen Snack essen?"</li>
+        <li>Alternative vorschlagen: "Lass uns mal einen anderen Boulder probieren."</li>
+        <li>Kein Zwang: Wenn dein Kind nicht mehr will, ist das okay!</li>
+      </ol>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Häufige Fehler von Eltern</h2>
+      <p>
+        Auch gut gemeinte Unterstützung kann nach hinten losgehen. Vermeide diese klassischen Fehler:
+      </p>
+
+      <div class="space-y-4 mt-4">
+        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p class="font-bold text-red-800">❌ Zu viel helfen</p>
+          <p class="text-[var(--color-text-light)]">Lass dein Kind selbst Lösungen finden. Nicht gleich den nächsten Griff zeigen oder das Kind hochschieben. Frustration gehört zum Lernprozess.</p>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p class="font-bold text-red-800">❌ Zu hohe Erwartungen</p>
+          <p class="text-[var(--color-text-light)]">Dein Kind muss nicht den schwersten Boulder schaffen. Der Spaß zählt, nicht die Schwierigkeitsstufe.</p>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p class="font-bold text-red-800">❌ Zu lange Sessions</p>
+          <p class="text-[var(--color-text-light)]">Für Anfänger reichen 60–90 Minuten völlig aus. Überfordere dein Kind nicht – lieber kurz und spaßig als lang und frustrierend.</p>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p class="font-bold text-red-800">❌ Das Handy nicht weglegen</p>
+          <p class="text-[var(--color-text-light)]">Sei präsent! Dein Kind möchte, dass du zuschaust und mitmachst – nicht am Handy sitzt. Plus: Du musst aufpassen!</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Praktische Tipps für den Bouldertag</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">⏰ Timing</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Unter der Woche vormittags</strong> sind Hallen am leersten – ideal mit kleinen Kindern</li>
+        <li><strong>Samstag/Sonntag</strong> kann es voll werden – plant genug Zeit ein</li>
+        <li><strong>Nicht hungrig oder müde</strong> in die Halle gehen – das führt zu Frust</li>
+        <li><strong>Pausen einplanen:</strong> Alle 20–30 Minuten eine kurze Trinkpause</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">💰 Kosten sparen</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Viele Hallen bieten <strong>Familienkarten</strong> oder 10er-Karten an</li>
+        <li>Manche Hallen haben <strong>Happy Hours</strong> mit günstigeren Eintrittspreisen</li>
+        <li>Leihschuhe am Anfang nutzen statt gleich kaufen</li>
+        <li>Gebrauchte <a href={`${siteBase}ausruestung/`}>Kletterschuhe</a> kaufen – Kinder wachsen schnell raus</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Selbst mitmachen!</h2>
+      <p>
+        Der beste Tipp zum Schluss: <strong>Kletter selbst mit!</strong> Bouldern ist ein fantastischer Familiensport. Wenn du selbst begeistert bist, springt die Begeisterung automatisch auf dein Kind über. Außerdem:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Du verstehst besser, was dein Kind durchmacht</li>
+        <li>Ihr habt ein gemeinsames Hobby</li>
+        <li>Du bleibst selbst fit</li>
+        <li>Es stärkt die Eltern-Kind-Beziehung</li>
+      </ul>
+      <p>
+        Finde eine Boulderhalle, die sowohl für Kinder als auch Erwachsene spannende Routen bietet – auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> kannst du Hallen nach Ausstattung und Bewertung filtern.
+      </p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-8">
+        <h3 class="text-lg font-bold mb-2">🎯 Die goldenen Regeln für Eltern</h3>
+        <ol class="list-decimal pl-6 space-y-1 text-[var(--color-text-light)]">
+          <li>Spaß steht immer an erster Stelle</li>
+          <li>Kein Leistungsdruck – jedes Kind hat sein eigenes Tempo</li>
+          <li>Sicherheit geht vor</li>
+          <li>Lass dein Kind selbst Lösungen finden</li>
+          <li>Sei präsent und mach mit!</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href={`${siteBase}ausruestung/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+        <span class="text-sm text-[var(--color-text-light)]">← Vorheriger Artikel</span>
+        <span class="block font-bold text-[var(--color-text)] mt-1">Ausrüstung</span>
+      </a>
+      <a href={`${siteBase}boulderhallen-finden/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+        <span class="text-sm text-[var(--color-text-light)]">Nächster Artikel →</span>
+        <span class="block font-bold text-[var(--color-text)] mt-1">Boulderhalle finden</span>
+      </a>
+    </div>
+  </article>
+</BaseLayout>

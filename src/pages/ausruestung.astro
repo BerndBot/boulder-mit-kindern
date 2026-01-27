@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const siteBase = import.meta.env.BASE_URL;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ausrüstung zum Bouldern für Kinder",
+  "description": "Welche Ausrüstung brauchen Kinder zum Bouldern? Kletterschuhe, Chalk, Kleidung und mehr – ein praktischer Ratgeber.",
+  "author": { "@type": "Organization", "name": "Bouldern mit Kindern" },
+  "publisher": { "@type": "Organization", "name": "Bouldern mit Kindern" },
+  "inLanguage": "de"
+};
+---
+
+<BaseLayout
+  title="Ausrüstung zum Bouldern für Kinder – Kletterschuhe, Chalk & mehr"
+  description="Welche Ausrüstung brauchen Kinder zum Bouldern? Kletterschuhe, Chalk, Kleidung – der komplette Ratgeber für Eltern. Was leihen, was kaufen?"
+  schema={schema}
+>
+  <article class="max-w-4xl mx-auto px-4 py-12">
+    <nav class="text-sm text-[var(--color-text-light)] mb-6">
+      <a href={`${siteBase}`} class="hover:text-[var(--color-primary)]">Start</a>
+      <span class="mx-2">›</span>
+      <span>Ausrüstung</span>
+    </nav>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Ausrüstung zum Bouldern für Kinder</h1>
+
+    <p class="text-xl text-[var(--color-text-light)] mb-8">
+      Die gute Nachricht vorweg: Zum Bouldern braucht man erstaunlich wenig Ausrüstung. Kein Seil, kein Gurt, kein Helm. Trotzdem gibt es einiges, was den Boulderspaß für Kinder noch besser macht. Hier erfährst du, was wirklich nötig ist und worauf du achten solltest.
+    </p>
+
+    <div class="prose prose-lg max-w-none">
+      <h2 class="text-2xl font-bold mt-10 mb-4">Das Wichtigste: Kletterschuhe</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">👟 Braucht mein Kind eigene Kletterschuhe?</h3>
+      <p>
+        Für den <strong>ersten Besuch in der Boulderhalle</strong> braucht dein Kind definitiv keine eigenen Kletterschuhe. In praktisch allen Hallen können Leihschuhe ausgeliehen werden – meist für 2–4 Euro pro Besuch. Das ist der perfekte Einstieg, um herauszufinden, ob Bouldern etwas für euer Kind ist.
+      </p>
+      <p>
+        Eigene Kletterschuhe lohnen sich erst, wenn dein Kind <strong>regelmäßig</strong> (mindestens 1–2 Mal pro Woche) bouldern geht. Ab dann rechnet sich der Kauf schnell, und eigene Schuhe sitzen besser und sind hygienischer als Leihschuhe.
+      </p>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🎯 Worauf beim Kauf achten?</h3>
+      <p>
+        Kinderkletterschuhe unterscheiden sich deutlich von Erwachsenenschuhen. Hier die wichtigsten Tipps:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Passform:</strong> Der Schuh sollte eng sitzen, aber nicht schmerzen. Kinderfüße wachsen schnell – plane keine "Luft zum Wachsen" ein, aber quetsche den Fuß auch nicht hinein.</li>
+        <li><strong>Verschluss:</strong> Klettverschluss ist für Kinder ideal – schnell an, schnell aus. Schnürschuhe sind für kleine Kinder unpraktisch.</li>
+        <li><strong>Sohle:</strong> Weiche, flexible Sohlen sind für Kinder besser als steife. Sie ermöglichen ein besseres Fußgefühl.</li>
+        <li><strong>Asymmetrie:</strong> Für Kinder unter 10 Jahren sind symmetrische oder nur leicht asymmetrische Schuhe am besten. Stark gebogene Schuhe (Downturn) sind für Kinderfüße nicht geeignet.</li>
+        <li><strong>Größe:</strong> Kletterschuhe werden in der Regel in der Straßenschuhgröße oder maximal eine halbe Größe kleiner getragen. Bei Kindern niemals zu eng!</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">💰 Was kosten Kinderkletterschuhe?</h3>
+      <p>
+        Kinderkletterschuhe kosten zwischen <strong>40 und 80 Euro</strong>. Bekannte Marken sind La Sportiva (Gripit), SIMOND (Kinder-Rock), Scarpa und Boreal. Da Kinderfüße schnell wachsen, lohnt es sich auch, nach gebrauchten Schuhen Ausschau zu halten – auf Kleinanzeigen oder in Boulderhallen gibt es oft Tauschbörsen.
+      </p>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 my-6">
+        <h4 class="font-bold mb-2">💡 Tipp: Erst leihen, dann kaufen</h4>
+        <p class="text-[var(--color-text-light)]">
+          Besucht erst 3–5 Mal die <a href={`${siteBase}boulderhallen-finden/`}>Boulderhalle</a> mit Leihschuhen. Wenn dein Kind Feuer gefangen hat, investiert in eigene Schuhe. So wisst ihr, dass sich der Kauf lohnt.
+        </p>
+      </div>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Chalk (Magnesia)</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🤲 Was ist Chalk und brauchen Kinder es?</h3>
+      <p>
+        <strong>Chalk</strong> (Magnesia) ist das weiße Pulver, das Kletterer an den Händen verwenden. Es absorbiert Schweiß und sorgt für besseren Grip an den Griffen. Für Anfänger und jüngere Kinder ist Chalk nicht zwingend notwendig – viele Kinder klettern prima ohne.
+      </p>
+      <p>
+        Ab einem gewissen Level wird Chalk aber hilfreich, besonders wenn die Hände schwitzen. <strong>Liquid Chalk</strong> (flüssiges Chalk) ist für Kinder oft die beste Wahl: Es staubt nicht, lässt sich leicht auftragen und ist sauberer als loses Pulver.
+      </p>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">📦 Chalk-Arten im Überblick</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Liquid Chalk:</strong> Ideal für Kinder – kein Stauben, einfach in der Anwendung (ca. 8–12 €)</li>
+        <li><strong>Chalk Ball:</strong> Im Beutel, weniger Sauerei als loses Chalk (ca. 5–8 €)</li>
+        <li><strong>Loses Chalk:</strong> Am günstigsten, aber staubt am meisten (ca. 5–10 €)</li>
+        <li><strong>Chalk Bag:</strong> Praktisch für unterwegs, wird am Gürtel getragen (ca. 15–25 €)</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Kleidung zum Bouldern</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">👕 Was sollte mein Kind anziehen?</h3>
+      <p>
+        Beim <strong>Kinder Bouldern</strong> ist die Kleiderwahl unkompliziert. Die Grundregel: bequem und bewegungsfreundlich. Hier ein paar Tipps:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Hose:</strong> Flexible Jogginghose oder dehnbare Jeans. Hauptsache, die Beine lassen sich gut anheben. Keine weiten Schlabberhosen – die bleiben an Griffen hängen.</li>
+        <li><strong>Oberteil:</strong> T-Shirt oder Langarmshirt. Nicht zu weit, damit es nicht über das Gesicht rutscht, wenn die Arme oben sind.</li>
+        <li><strong>Socken:</strong> Dünne Socken für Kletterschuhe. Manche klettern barfuß in den Schuhen – das ist Geschmackssache.</li>
+        <li><strong>Keine Schmuck oder Uhren:</strong> Ringe, Ketten und Armbänder können an Griffen hängen bleiben – vorher ablegen!</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Weitere nützliche Ausrüstung</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🎒 Was noch praktisch ist</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Trinkflasche:</strong> Bouldern ist anstrengend – genug Wasser mitnehmen!</li>
+        <li><strong>Snacks:</strong> Obst, Müsliriegel oder Nüsse für die Energiepause</li>
+        <li><strong>Handtuch:</strong> Zum Abtrocknen der Hände (Alternative zu Chalk für Anfänger)</li>
+        <li><strong>Wechselshirt:</strong> Kinder schwitzen beim Klettern ordentlich</li>
+        <li><strong>Pflaster:</strong> Für aufgeschürfte Finger – passiert am Anfang gelegentlich</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Was man NICHT braucht</h2>
+      <p>
+        Lass dich nicht von der Ausrüstungsindustrie verrückt machen. Folgendes ist zum Bouldern <strong>nicht nötig</strong>:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>❌ Klettergurt (nur für Seilklettern)</li>
+        <li>❌ Helm (Bouldern ist in Absprunghöhe)</li>
+        <li>❌ Seil und Sicherungsgerät</li>
+        <li>❌ Spezielle Kletterkleidung (normale Sportkleidung reicht)</li>
+        <li>❌ Fingerboard / Hangeboard (erst für Jugendliche/Erwachsene)</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Ausrüstung in der Boulderhalle</h2>
+      <p>
+        Die meisten <a href={`${siteBase}boulderhallen-finden/`}>Boulderhallen</a> sind bestens ausgestattet: Leihschuhe, Chalk zum Kaufen und manchmal sogar Schließfächer für Wertsachen. Informiere dich vorab auf der Website deiner Halle oder nutze <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a>, um Hallen mit Kinderausstattung zu finden.
+      </p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-8">
+        <h3 class="text-lg font-bold mb-2">📋 Packliste für den ersten Besuch</h3>
+        <ul class="list-none space-y-1 text-[var(--color-text-light)]">
+          <li>✅ Bequeme Sportkleidung</li>
+          <li>✅ Dünne Socken (für Leihschuhe)</li>
+          <li>✅ Trinkflasche</li>
+          <li>✅ Snacks</li>
+          <li>✅ Gute Laune!</li>
+          <li>⭕ Leihschuhe gibt's vor Ort</li>
+          <li>⭕ Chalk ist am Anfang optional</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href={`${siteBase}vorteile/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+        <span class="text-sm text-[var(--color-text-light)]">← Vorheriger Artikel</span>
+        <span class="block font-bold text-[var(--color-text)] mt-1">Vorteile des Boulderns</span>
+      </a>
+      <a href={`${siteBase}tipps-fuer-eltern/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+        <span class="text-sm text-[var(--color-text-light)]">Nächster Artikel →</span>
+        <span class="block font-bold text-[var(--color-text)] mt-1">Tipps für Eltern</span>
+      </a>
+    </div>
+  </article>
+</BaseLayout>

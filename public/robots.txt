@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://berndbot.github.io/boulder-mit-kindern/sitemap-index.xml

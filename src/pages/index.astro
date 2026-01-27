@@ -1,0 +1,161 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const siteBase = import.meta.env.BASE_URL;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Bouldern mit Kindern",
+  "description": "Dein Ratgeber rund um Bouldern und Klettern mit Kindern – Tipps, Ausrüstung, Vorteile und Boulderhallen finden.",
+  "url": "https://berndbot.github.io/boulder-mit-kindern/",
+  "inLanguage": "de"
+};
+---
+
+<BaseLayout
+  title="Bouldern mit Kindern – Der Ratgeber für Eltern & Kids | 2025"
+  description="Alles über Bouldern mit Kindern: Ab welchem Alter, Vorteile, Ausrüstung, Tipps für Eltern und Boulderhallen in deiner Nähe finden."
+  schema={schema}
+>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+        Bouldern mit Kindern
+      </h1>
+      <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+        Der ultimative Ratgeber für Eltern, die mit ihren Kindern die Welt des Boulderns entdecken möchten. Von den ersten Griffen bis zur richtigen Boulderhalle.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={`${siteBase}ab-welchem-alter/`} class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg no-underline transition-colors text-lg">
+          Ab welchem Alter? →
+        </a>
+        <a href={`${siteBase}boulderhallen-finden/`} class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg no-underline transition-colors text-lg border border-white/30">
+          Boulderhalle finden
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="prose prose-lg max-w-none">
+      <h2 class="text-3xl font-bold mb-6">Warum Bouldern die perfekte Sportart für Kinder ist</h2>
+      <p>
+        <strong>Bouldern mit Kindern</strong> wird immer beliebter – und das aus gutem Grund. Diese faszinierende Sportart verbindet Bewegung, Problemlösung und jede Menge Spaß miteinander. Kinder sind von Natur aus begeisterte Kletterer: Schon die Kleinsten klettern auf Spielplätzen, Bäumen und Möbeln. Bouldern gibt diesem natürlichen Bewegungsdrang einen sicheren und fördernden Rahmen.
+      </p>
+      <p>
+        Im Gegensatz zum klassischen Klettern mit Seil und Gurt wird beim Bouldern in Absprunghöhe geklettert. Dicke Weichbodenmatten sorgen für Sicherheit. Das macht den Einstieg besonders einfach und kinderfreundlich. Ob in der <a href={`${siteBase}boulderhallen-finden/`}>Boulderhalle</a> oder am Fels – Kinder können hier ihre Grenzen austesten und wachsen.
+      </p>
+      <p>
+        Auf dieser Seite findest du alles, was du als Elternteil wissen musst: <a href={`${siteBase}ab-welchem-alter/`}>Ab welchem Alter</a> Kinder bouldern können, welche <a href={`${siteBase}vorteile/`}>Vorteile</a> der Sport bietet, die richtige <a href={`${siteBase}ausruestung/`}>Ausrüstung</a> und praktische <a href={`${siteBase}tipps-fuer-eltern/`}>Tipps für Eltern</a>. Wenn du direkt eine Boulderhalle suchst, schau auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> – dort findest du Kletter- und Boulderhallen in deiner Nähe.
+      </p>
+    </div>
+  </section>
+
+  <!-- Feature Cards -->
+  <section class="bg-[var(--color-bg-alt)] py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Was dich hier erwartet</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <a href={`${siteBase}ab-welchem-alter/`} class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow no-underline group">
+          <div class="text-4xl mb-4">👶</div>
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-text)] group-hover:text-[var(--color-primary)]">Ab welchem Alter?</h3>
+          <p class="text-[var(--color-text-light)]">Erfahre, ab wann Kinder mit dem Bouldern starten können und was du in den verschiedenen Altersgruppen beachten solltest.</p>
+        </a>
+
+        <a href={`${siteBase}vorteile/`} class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow no-underline group">
+          <div class="text-4xl mb-4">💪</div>
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-text)] group-hover:text-[var(--color-primary)]">Vorteile für Kinder</h3>
+          <p class="text-[var(--color-text-light)]">Bouldern fördert Motorik, Selbstvertrauen, Konzentration und soziale Fähigkeiten. Entdecke alle Vorteile.</p>
+        </a>
+
+        <a href={`${siteBase}ausruestung/`} class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow no-underline group">
+          <div class="text-4xl mb-4">👟</div>
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-text)] group-hover:text-[var(--color-primary)]">Ausrüstung</h3>
+          <p class="text-[var(--color-text-light)]">Kletterschuhe, Chalk, Kleidung – was brauchen Kinder wirklich zum Bouldern? Ein praktischer Überblick.</p>
+        </a>
+
+        <a href={`${siteBase}tipps-fuer-eltern/`} class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow no-underline group">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-text)] group-hover:text-[var(--color-primary)]">Tipps für Eltern</h3>
+          <p class="text-[var(--color-text-light)]">So motivierst du dein Kind, bleibst sicher und machst jeden Boulderbesuch zu einem positiven Erlebnis.</p>
+        </a>
+
+        <a href={`${siteBase}boulderhallen-finden/`} class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow no-underline group">
+          <div class="text-4xl mb-4">📍</div>
+          <h3 class="text-xl font-bold mb-2 text-[var(--color-text)] group-hover:text-[var(--color-primary)]">Boulderhalle finden</h3>
+          <p class="text-[var(--color-text-light)]">Finde kinderfreundliche Boulderhallen in deiner Nähe – mit unserem Hallenverzeichnis und hilfreichen Tipps.</p>
+        </a>
+
+        <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-6 shadow-sm text-white flex flex-col justify-center">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-bold mb-2">Bereit loszulegen?</h3>
+          <p class="text-blue-100 mb-4">Bouldern ist eine der besten Sportarten für Kinder. Starte jetzt!</p>
+          <a href={`${siteBase}ab-welchem-alter/`} class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-lg no-underline transition-colors text-center">
+            Jetzt loslegen →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-8">Häufige Fragen zum Bouldern mit Kindern</h2>
+    <div class="space-y-6">
+      <details class="border border-[var(--color-border)] rounded-lg p-5 group" open>
+        <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+          Ab welchem Alter können Kinder bouldern?
+          <span class="text-[var(--color-text-light)] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-[var(--color-text-light)]">
+          Kinder können bereits ab 3–4 Jahren erste Erfahrungen an der Boulderwand sammeln. Viele Boulderhallen bieten spezielle Kinderbereiche und Kurse an. Lies mehr in unserem Artikel <a href={`${siteBase}ab-welchem-alter/`}>Ab welchem Alter können Kinder bouldern?</a>
+        </p>
+      </details>
+      <details class="border border-[var(--color-border)] rounded-lg p-5 group">
+        <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+          Ist Bouldern sicher für Kinder?
+          <span class="text-[var(--color-text-light)] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-[var(--color-text-light)]">
+          Ja, Bouldern ist sehr sicher. Die Kletterhöhe ist begrenzt und dicke Weichbodenmatten fangen Stürze ab. Wichtig ist eine gute Aufsicht durch Erwachsene. Mehr dazu in unseren <a href={`${siteBase}tipps-fuer-eltern/`}>Tipps für Eltern</a>.
+        </p>
+      </details>
+      <details class="border border-[var(--color-border)] rounded-lg p-5 group">
+        <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+          Welche Ausrüstung braucht mein Kind?
+          <span class="text-[var(--color-text-light)] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-[var(--color-text-light)]">
+          Für den Anfang reichen bequeme Sportkleidung und Hallenturnschuhe. Kletterschuhe können in den meisten Hallen geliehen werden. Alles zur <a href={`${siteBase}ausruestung/`}>Ausrüstung fürs Kinderbouldern</a> findest du hier.
+        </p>
+      </details>
+      <details class="border border-[var(--color-border)] rounded-lg p-5 group">
+        <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">
+          Wo finde ich eine Boulderhalle in meiner Nähe?
+          <span class="text-[var(--color-text-light)] group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-3 text-[var(--color-text-light)]">
+          Auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> findest du ein umfassendes Verzeichnis von Kletter- und Boulderhallen in deiner Region. Schau auch auf unsere Seite <a href={`${siteBase}boulderhallen-finden/`}>Boulderhallen finden</a> für hilfreiche Tipps zur Hallenwahl.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-amber-500 to-amber-600 text-white py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Finde die passende Boulderhalle für dein Kind</h2>
+      <p class="text-amber-100 text-lg mb-6">
+        Durchsuche tausende Kletter- und Boulderhallen auf ClimbDirectory und finde den perfekten Ort für euer nächstes Abenteuer.
+      </p>
+      <a href="https://climbdirectory.com" target="_blank" rel="noopener" class="inline-block bg-white text-amber-600 font-bold py-3 px-8 rounded-lg no-underline hover:bg-amber-50 transition-colors text-lg">
+        Boulderhallen auf ClimbDirectory entdecken →
+      </a>
+    </div>
+  </section>
+</BaseLayout>

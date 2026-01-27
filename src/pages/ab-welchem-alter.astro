@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const siteBase = import.meta.env.BASE_URL;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ab welchem Alter können Kinder bouldern?",
+  "description": "Erfahre, ab welchem Alter Kinder mit dem Bouldern beginnen können. Tipps für jede Altersgruppe von Kleinkind bis Teenager.",
+  "author": { "@type": "Organization", "name": "Bouldern mit Kindern" },
+  "publisher": { "@type": "Organization", "name": "Bouldern mit Kindern" },
+  "inLanguage": "de"
+};
+---
+
+<BaseLayout
+  title="Ab welchem Alter können Kinder bouldern? | Bouldern mit Kindern"
+  description="Ab welchem Alter können Kinder bouldern? Wir erklären, wann der perfekte Einstieg ist und was du je nach Altersgruppe beachten solltest."
+  schema={schema}
+>
+  <article class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-[var(--color-text-light)] mb-6">
+      <a href={`${siteBase}`} class="hover:text-[var(--color-primary)]">Start</a>
+      <span class="mx-2">›</span>
+      <span>Ab welchem Alter?</span>
+    </nav>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Ab welchem Alter können Kinder bouldern?</h1>
+
+    <p class="text-xl text-[var(--color-text-light)] mb-8">
+      Eine der häufigsten Fragen von Eltern: Wann kann mein Kind mit dem Bouldern anfangen? Die gute Nachricht – früher als du denkst! Hier erfährst du alles über den richtigen Einstieg in jedem Alter.
+    </p>
+
+    <div class="prose prose-lg max-w-none">
+      <h2 class="text-2xl font-bold mt-10 mb-4">Kinder sind geborene Kletterer</h2>
+      <p>
+        Beobachte Kinder auf einem Spielplatz: Sie klettern auf alles, was sich irgendwie erklimmen lässt. Bäume, Klettergerüste, Mauern – der natürliche Bewegungsdrang treibt sie nach oben. <strong>Bouldern</strong> ist die perfekte Sportart, um diesen Instinkt in eine sichere und fördernde Umgebung zu lenken.
+      </p>
+      <p>
+        Im Gegensatz zum Seilklettern braucht man beim Bouldern keine komplizierte Ausrüstung. Es wird in geringer Höhe geklettert, und dicke Matten fangen jeden Sturz auf. Das macht es ideal für den Einstieg – auch für die Kleinsten.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Altersgruppen im Überblick</h2>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🧒 2–3 Jahre: Erste Kletterversuche</h3>
+      <p>
+        Schon Kleinkinder ab etwa 2 Jahren können an niedrigen Boulderwänden erste Kletterversuche unternehmen. In diesem Alter geht es nicht um Technik oder Routen, sondern um das spielerische Entdecken. Einige Boulderhallen haben spezielle <strong>Kleinkinderbereiche</strong> mit extra niedrigen Wänden und großen, bunten Griffen.
+      </p>
+      <p>
+        <strong>Wichtig:</strong> In diesem Alter braucht dein Kind ständige Begleitung und sollte niemals unbeaufsichtigt an der Wand sein. Die Aufmerksamkeitsspanne ist kurz – rechne mit 15–30 Minuten aktiver Kletterzeit.
+      </p>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">👦 4–5 Jahre: Der spielerische Einstieg</h3>
+      <p>
+        Mit 4–5 Jahren können Kinder gezielter klettern. Sie beginnen, einfache Routen nachzuklettern und entwickeln ein besseres Körpergefühl. Viele <a href={`${siteBase}boulderhallen-finden/`}>Boulderhallen</a> bieten in dieser Altersgruppe erste <strong>Schnupperkurse</strong> an.
+      </p>
+      <p>
+        Das Wichtigste in diesem Alter: Der Spaß steht im Vordergrund! Kein Leistungsdruck, keine Erwartungen. Lass dein Kind die Wand in seinem eigenen Tempo erkunden. Spiele wie "Farbklettern" (nur bestimmte Farbgriffe benutzen) machen die Sessions besonders unterhaltsam.
+      </p>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🧗 6–8 Jahre: Technik entwickeln</h3>
+      <p>
+        Ab 6 Jahren wird es richtig spannend. Kinder in diesem Alter können bereits <strong>einfache Boulderproblemen</strong> lösen und beginnen, ihre Technik zu verfeinern. Sie lernen, ihre Füße gezielt zu setzen und den Körperschwerpunkt zu verlagern.
+      </p>
+      <p>
+        Jetzt ist auch der perfekte Zeitpunkt für einen <strong>Kletterkurs</strong>. Professionelle Trainer können deinem Kind spielerisch die Grundlagen der Klettertechnik vermitteln. Die meisten Kinder in diesem Alter können 45–60 Minuten am Stück konzentriert bouldern.
+      </p>
+      <p>
+        Apropos richtige Halle: Auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> kannst du Boulderhallen mit Kinderkursen in deiner Region finden.
+      </p>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🏆 9–12 Jahre: Ambitioniertes Bouldern</h3>
+      <p>
+        In diesem Alter können Kinder schon anspruchsvolle Boulder lösen. Viele entwickeln eine echte Leidenschaft für den Sport und möchten regelmäßig in die Halle. Einige steigen in den <strong>Wettkampfsport</strong> ein und nehmen an Jugendwettbewerben teil.
+      </p>
+      <p>
+        Die Muskulatur ist nun stärker entwickelt, und Kinder können komplexere Bewegungsabläufe erlernen. Dynamische Züge, Überhänge und technisch anspruchsvolle Routen sind jetzt möglich. Regelmäßiges Training 2–3 Mal pro Woche ist in Ordnung, solange der Spaß nicht verloren geht.
+      </p>
+
+      <h3 class="text-xl font-bold mt-8 mb-3">🚀 Ab 13 Jahren: Training wie Erwachsene</h3>
+      <p>
+        Teenager können im Prinzip wie Erwachsene trainieren, allerdings sollte man den noch wachsenden Körper berücksichtigen. Übermäßiges Hangelbrett-Training oder extreme Belastung der Finger sollten vermieden werden, da die Wachstumsfugen noch nicht geschlossen sind.
+      </p>
+      <p>
+        Viele Boulderhallen haben spezielle <strong>Jugendgruppen</strong> und Trainingsangebote. Das ist nicht nur super für die Entwicklung, sondern auch für den sozialen Kontakt mit Gleichaltrigen.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Worauf es wirklich ankommt</h2>
+      <p>
+        Letztlich ist das genaue Alter weniger entscheidend als die <strong>individuelle Entwicklung</strong> deines Kindes. Achte auf folgende Anzeichen, dass dein Kind bereit ist:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Motorische Reife:</strong> Kann dein Kind sicher klettern und balancieren?</li>
+        <li><strong>Verständnis für Regeln:</strong> Kann es einfache Anweisungen befolgen (z.B. "Nicht unter andere Kletterer stellen")?</li>
+        <li><strong>Interesse:</strong> Will dein Kind klettern, oder ist es deine Idee?</li>
+        <li><strong>Aufmerksamkeit:</strong> Kann es sich mindestens 15 Minuten auf eine Aktivität konzentrieren?</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-10 mb-4">Der beste Einstieg</h2>
+      <p>
+        Egal in welchem Alter dein Kind ist – der beste Einstieg ist ein <strong>Schnupperbesuch in einer Boulderhalle</strong>. Die meisten Hallen bieten Leihschuhe und eine Einführung an. So könnt ihr ohne große Investition ausprobieren, ob Bouldern etwas für euch ist.
+      </p>
+      <p>
+        Suche eine kinderfreundliche Boulderhalle in deiner Nähe – auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> findest du ein umfassendes Verzeichnis von Kletterhallen mit Bewertungen und Ausstattungsdetails.
+      </p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-8">
+        <h3 class="text-lg font-bold mb-2">💡 Zusammenfassung</h3>
+        <ul class="list-disc pl-6 space-y-1 text-[var(--color-text-light)]">
+          <li><strong>Ab 2–3 Jahren:</strong> Spielerisches Klettern unter Aufsicht</li>
+          <li><strong>Ab 4–5 Jahren:</strong> Erste Schnupperkurse möglich</li>
+          <li><strong>Ab 6–8 Jahren:</strong> Gezielte Kurse und Technikentwicklung</li>
+          <li><strong>Ab 9–12 Jahren:</strong> Regelmäßiges Training und Wettkämpfe</li>
+          <li><strong>Ab 13 Jahren:</strong> Training wie Erwachsene (mit Rücksicht auf Wachstum)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Internal Links -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href={`${siteBase}vorteile/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+        <span class="text-sm text-[var(--color-text-light)]">Nächster Artikel →</span>
+        <span class="block font-bold text-[var(--color-text)] mt-1">Vorteile des Boulderns für Kinder</span>
+      </a>
+      <a href={`${siteBase}ausruestung/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+        <span class="text-sm text-[var(--color-text-light)]">Auch interessant →</span>
+        <span class="block font-bold text-[var(--color-text)] mt-1">Die richtige Ausrüstung für Kinder</span>
+      </a>
+    </div>
+  </article>
+</BaseLayout>
