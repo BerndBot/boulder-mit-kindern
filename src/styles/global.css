@@ -1,15 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-accent: #f59e0b;
-  --color-accent-dark: #d97706;
+  /* Warme, elternfreundliche Farben */
+  --color-primary: #16a34a;        /* Grün - Sicherheit, Natur */
+  --color-primary-dark: #15803d;
+  --color-primary-light: #22c55e;
+  --color-secondary: #0ea5e9;      /* Himmelblau - Vertrauen */
+  --color-secondary-dark: #0284c7;
+  --color-accent: #f97316;         /* Orange - Energie, Spaß */
+  --color-accent-dark: #ea580c;
+  --color-warm: #fef3c7;           /* Warm Gelb - einladend */
+  --color-warm-dark: #fde68a;
   --color-bg: #ffffff;
-  --color-bg-alt: #f8fafc;
-  --color-text: #1e293b;
-  --color-text-light: #64748b;
-  --color-border: #e2e8f0;
+  --color-bg-alt: #fefbf3;         /* Cremiger Hintergrund */
+  --color-bg-warm: #fffbeb;
+  --color-text: #1c1917;           /* Warmes Schwarz */
+  --color-text-light: #57534e;     /* Warmes Grau */
+  --color-border: #e7e5e4;
+  --color-success: #22c55e;
+  --color-trust: #0d9488;          /* Teal für Trust-Badges */
 }
 
 html {
@@ -17,9 +26,10 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
+  line-height: 1.7;
 }
 
 a {
@@ -32,4 +42,69 @@ a {
 
 a:hover {
   color: var(--color-primary-dark);
+}
+
+/* Trust Badge Styles */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-bg-warm);
+  border: 1px solid var(--color-warm-dark);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.trust-badge-icon {
+  color: var(--color-trust);
+}
+
+/* Hero Image Overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(22, 163, 74, 0.92) 0%,
+    rgba(14, 165, 233, 0.85) 100%
+  );
+}
+
+/* Card hover effects */
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
+}
+
+/* Safety highlight box */
+.safety-box {
+  background: linear-gradient(135deg, var(--color-bg-warm) 0%, #ecfdf5 100%);
+  border-left: 4px solid var(--color-primary);
+  padding: 1.5rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+/* Image styles */
+.content-image {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive text */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
 }
