@@ -1,31 +1,21 @@
-# Bildnachweise / Image Credits
+# Image Credits
 
-Alle Bilder stammen von [Unsplash](https://unsplash.com) und sind unter der Unsplash-Lizenz veröffentlicht.
-Diese Lizenz erlaubt die kostenlose Nutzung für kommerzielle und nicht-kommerzielle Zwecke ohne Namensnennung.
+All images are from [Unsplash](https://unsplash.com) and are free to use under the [Unsplash License](https://unsplash.com/license).
 
-## Verwendete Bilder
+## Images Used
 
-1. **Hero-Bild (Kletterwand)**
-   - URL: https://images.unsplash.com/photo-1522163182402-834f871fd851
-   - Lizenz: Unsplash License (kostenlos für kommerzielle Nutzung)
+1. **Hero Background & Gallery** - Colorful climbing wall
+   - Photo by [bady abbas](https://unsplash.com/@bady)
+   - URL: https://unsplash.com/photos/VmYZe_yqxL0
 
-2. **Sicherheit/Kletterhalle**
-   - URL: https://images.unsplash.com/photo-1544551763-46a013bb70d5
-   - Lizenz: Unsplash License
+2. **Boy Wall Climbing** - Child with instructor
+   - Photo by [Rachel](https://unsplash.com/@noguidebook)
+   - URL: https://unsplash.com/photos/GGlz-QSvL38
 
-3. **Ausrüstung/Kletterausrüstung**
-   - URL: https://images.unsplash.com/photo-1551632436-cbf8dd35adfa
-   - Lizenz: Unsplash License
+3. **Little Girl Climbing** - Child on climbing wall
+   - Photo by [Jakub Pabis](https://unsplash.com/@jakubpabis)
+   - URL: https://unsplash.com/photos/vavq911aWCw
 
-4. **Familie/Sport**
-   - URL: https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b
-   - Lizenz: Unsplash License
-
-## Unsplash Lizenz
-
-> Unsplash photos are made to be used freely. Our license reflects that.
-> - All photos can be downloaded and used for free
-> - Commercial and non-commercial purposes
-> - No permission needed (though attribution is appreciated!)
-
-Mehr Informationen: https://unsplash.com/license
+4. **Kids Climbing** - Children at climbing gym
+   - Photo by [Rachel](https://unsplash.com/@noguidebook)
+   - URL: https://unsplash.com/photos/U4zpPfvogJ4
