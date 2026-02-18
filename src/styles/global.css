@@ -1,24 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* Warme, elternfreundliche Farben */
-  --color-primary: #16a34a;        /* Grün - Sicherheit, Natur */
-  --color-primary-dark: #15803d;
-  --color-primary-light: #22c55e;
-  --color-secondary: #0ea5e9;      /* Himmelblau - Vertrauen */
-  --color-secondary-dark: #0284c7;
-  --color-accent: #f97316;         /* Orange - Energie, Spaß */
-  --color-accent-dark: #ea580c;
-  --color-warm: #fef3c7;           /* Warm Gelb - einladend */
-  --color-warm-dark: #fde68a;
+  --color-primary: #0d9488;
+  --color-primary-dark: #0f766e;
+  --color-primary-light: #5eead4;
+  --color-accent: #f59e0b;
+  --color-accent-dark: #d97706;
   --color-bg: #ffffff;
-  --color-bg-alt: #fefbf3;         /* Cremiger Hintergrund */
-  --color-bg-warm: #fffbeb;
-  --color-text: #1c1917;           /* Warmes Schwarz */
-  --color-text-light: #57534e;     /* Warmes Grau */
-  --color-border: #e7e5e4;
-  --color-success: #22c55e;
-  --color-trust: #0d9488;          /* Teal für Trust-Badges */
+  --color-bg-alt: #f0fdf4;
+  --color-bg-warm: #fefce8;
+  --color-text: #1a2e1a;
+  --color-text-light: #4b6043;
+  --color-border: #d1e7dd;
 }
 
 html {
@@ -26,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.7;
@@ -36,75 +29,103 @@ a {
   color: var(--color-primary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  transition: color 0.2s;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
 }
 
 a:hover {
   color: var(--color-primary-dark);
 }
 
-/* Trust Badge Styles */
-.trust-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: var(--color-bg-warm);
-  border: 1px solid var(--color-warm-dark);
-  border-radius: 9999px;
-  font-size: 0.875rem;
+/* Fade-in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.animate-fade-in-delay-4 {
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.animate-fade-in-delay-5 {
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+/* Prose styling overrides */
+.prose h2 {
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.prose h3 {
   color: var(--color-text);
 }
 
-.trust-badge-icon {
-  color: var(--color-trust);
+.prose strong {
+  color: var(--color-text);
 }
 
-/* Hero Image Overlay */
-.hero-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(22, 163, 74, 0.92) 0%,
-    rgba(14, 165, 233, 0.85) 100%
-  );
-}
-
-/* Card hover effects */
-.feature-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
-}
-
-/* Safety highlight box */
-.safety-box {
-  background: linear-gradient(135deg, var(--color-bg-warm) 0%, #ecfdf5 100%);
-  border-left: 4px solid var(--color-primary);
-  padding: 1.5rem;
-  border-radius: 0 0.75rem 0.75rem 0;
-}
-
-/* Image styles */
-.content-image {
+/* Highlight box styles */
+.highlight-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid #a7f3d0;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
 }
 
-/* Responsive text */
-@media (max-width: 640px) {
-  body {
-    font-size: 16px;
-  }
-  
-  h1 {
-    font-size: 2rem !important;
-  }
-  
-  h2 {
-    font-size: 1.5rem !important;
-  }
+.highlight-box-warm {
+  background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+  border: 1px solid #fde68a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -8px rgba(13, 148, 136, 0.15);
+}
+
+/* Page hero gradient for subpages */
+.page-hero {
+  background: linear-gradient(135deg, #134e4a 0%, #0d9488 50%, #5eead4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(254, 243, 199, 0.1) 0%, transparent 70%);
+  pointer-events: none;
 }

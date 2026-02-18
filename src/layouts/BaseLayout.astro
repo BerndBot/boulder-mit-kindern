@@ -24,7 +24,6 @@ const siteBase = import.meta.env.BASE_URL;
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧗</text></svg>">
 
-    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -32,7 +31,6 @@ const siteBase = import.meta.env.BASE_URL;
     <meta property="og:site_name" content="Bouldern mit Kindern" />
     <meta property="og:image" content="/boulder-mit-kindern/images/climbing-wall-alt.jpg" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -46,36 +44,35 @@ const siteBase = import.meta.env.BASE_URL;
   </head>
   <body class="min-h-screen flex flex-col">
     <!-- Navigation -->
-    <header class="bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)] sticky top-0 z-50">
-      <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href={`${siteBase}`} class="flex items-center gap-2 text-xl font-bold text-[var(--color-primary)] no-underline hover:text-[var(--color-primary-dark)] transition-colors">
+    <header id="site-header" class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-transparent transition-all duration-300">
+      <nav class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href={`${siteBase}`} class="text-xl font-bold text-[var(--color-primary)] no-underline hover:text-[var(--color-primary-dark)] tracking-tight flex items-center gap-2">
           <span class="text-2xl">🧗</span>
-          <span class="hidden sm:inline">Bouldern mit Kindern</span>
-          <span class="sm:hidden">Bouldern</span>
+          <span>Bouldern mit Kindern</span>
         </a>
-        <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-[var(--color-bg-alt)] transition-colors" aria-label="Menü öffnen">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-teal-50 transition-colors" aria-label="Menü öffnen">
+          <svg class="w-6 h-6 text-[var(--color-text)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
         <ul id="nav-menu" class="hidden md:flex gap-1 text-sm font-medium">
-          <li><a href={`${siteBase}`} class="px-3 py-2 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">Start</a></li>
-          <li><a href={`${siteBase}ab-welchem-alter/`} class="px-3 py-2 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">Ab welchem Alter?</a></li>
-          <li><a href={`${siteBase}vorteile/`} class="px-3 py-2 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">Vorteile</a></li>
-          <li><a href={`${siteBase}ausruestung/`} class="px-3 py-2 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">Ausrüstung</a></li>
-          <li><a href={`${siteBase}tipps-fuer-eltern/`} class="px-3 py-2 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">Eltern-Tipps</a></li>
-          <li><a href={`${siteBase}boulderhallen-finden/`} class="px-3 py-2 rounded-lg no-underline bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)] transition-all">Hallen finden</a></li>
+          <li><a href={`${siteBase}`} class="no-underline text-[var(--color-text-light)] hover:text-[var(--color-primary)] px-3 py-2 rounded-lg hover:bg-teal-50 transition-colors">Start</a></li>
+          <li><a href={`${siteBase}ab-welchem-alter/`} class="no-underline text-[var(--color-text-light)] hover:text-[var(--color-primary)] px-3 py-2 rounded-lg hover:bg-teal-50 transition-colors">Ab welchem Alter?</a></li>
+          <li><a href={`${siteBase}vorteile/`} class="no-underline text-[var(--color-text-light)] hover:text-[var(--color-primary)] px-3 py-2 rounded-lg hover:bg-teal-50 transition-colors">Vorteile</a></li>
+          <li><a href={`${siteBase}ausruestung/`} class="no-underline text-[var(--color-text-light)] hover:text-[var(--color-primary)] px-3 py-2 rounded-lg hover:bg-teal-50 transition-colors">Ausrüstung</a></li>
+          <li><a href={`${siteBase}tipps-fuer-eltern/`} class="no-underline text-[var(--color-text-light)] hover:text-[var(--color-primary)] px-3 py-2 rounded-lg hover:bg-teal-50 transition-colors">Tipps für Eltern</a></li>
+          <li><a href={`${siteBase}boulderhallen-finden/`} class="no-underline text-[var(--color-text-light)] hover:text-[var(--color-primary)] px-3 py-2 rounded-lg hover:bg-teal-50 transition-colors">Hallen finden</a></li>
         </ul>
       </nav>
       <!-- Mobile menu -->
-      <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--color-border)] bg-white">
+      <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--color-border)] bg-white/95 backdrop-blur-lg">
         <ul class="flex flex-col gap-1 px-4 py-3 text-sm font-medium">
-          <li><a href={`${siteBase}`} class="block py-3 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">🏠 Start</a></li>
-          <li><a href={`${siteBase}ab-welchem-alter/`} class="block py-3 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">👶 Ab welchem Alter?</a></li>
-          <li><a href={`${siteBase}vorteile/`} class="block py-3 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">💪 Vorteile</a></li>
-          <li><a href={`${siteBase}ausruestung/`} class="block py-3 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">👟 Ausrüstung</a></li>
-          <li><a href={`${siteBase}tipps-fuer-eltern/`} class="block py-3 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary)]/5 transition-all">🎯 Tipps für Eltern</a></li>
-          <li><a href={`${siteBase}boulderhallen-finden/`} class="block py-3 px-3 rounded-lg no-underline bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)] transition-all text-center mt-2">📍 Boulderhalle finden</a></li>
+          <li><a href={`${siteBase}`} class="block py-2.5 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-teal-50 transition-colors">Start</a></li>
+          <li><a href={`${siteBase}ab-welchem-alter/`} class="block py-2.5 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-teal-50 transition-colors">Ab welchem Alter?</a></li>
+          <li><a href={`${siteBase}vorteile/`} class="block py-2.5 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-teal-50 transition-colors">Vorteile</a></li>
+          <li><a href={`${siteBase}ausruestung/`} class="block py-2.5 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-teal-50 transition-colors">Ausrüstung</a></li>
+          <li><a href={`${siteBase}tipps-fuer-eltern/`} class="block py-2.5 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-teal-50 transition-colors">Tipps für Eltern</a></li>
+          <li><a href={`${siteBase}boulderhallen-finden/`} class="block py-2.5 px-3 rounded-lg no-underline text-[var(--color-text)] hover:text-[var(--color-primary)] hover:bg-teal-50 transition-colors">Hallen finden</a></li>
         </ul>
       </div>
     </header>
@@ -86,15 +83,15 @@ const siteBase = import.meta.env.BASE_URL;
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[var(--color-text)] text-white mt-16">
-      <div class="max-w-5xl mx-auto px-4 py-12">
+    <footer class="bg-gradient-to-b from-[#134e4a] to-[#0c3c38] text-white mt-20">
+      <div class="max-w-5xl mx-auto px-4 py-14">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 class="flex items-center gap-2 font-bold text-xl mb-4">
-              <span>🧗</span> Bouldern mit Kindern
+            <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+              <span class="text-2xl">🧗</span> Bouldern mit Kindern
             </h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              Dein liebevoller Ratgeber rund um das Thema Bouldern und Klettern mit Kindern. Tipps, Ausrüstung und die besten Boulderhallen für die ganze Familie.
+            <p class="text-sm text-teal-200/80 leading-relaxed">
+              Dein Ratgeber rund um das Thema Bouldern und Klettern mit Kindern. Tipps, Ausrüstung und die besten Boulderhallen.
             </p>
             <div class="flex items-center gap-2 mt-4 text-sm text-gray-500">
               <span>🛡️</span>
@@ -103,23 +100,20 @@ const siteBase = import.meta.env.BASE_URL;
           </div>
           <div>
             <h3 class="font-bold text-lg mb-4">Ratgeber</h3>
-            <ul class="space-y-3 text-sm">
-              <li><a href={`${siteBase}ab-welchem-alter/`} class="text-gray-400 hover:text-white no-underline transition-colors">Ab welchem Alter?</a></li>
-              <li><a href={`${siteBase}vorteile/`} class="text-gray-400 hover:text-white no-underline transition-colors">Vorteile für Kinder</a></li>
-              <li><a href={`${siteBase}ausruestung/`} class="text-gray-400 hover:text-white no-underline transition-colors">Ausrüstung</a></li>
-              <li><a href={`${siteBase}tipps-fuer-eltern/`} class="text-gray-400 hover:text-white no-underline transition-colors">Tipps für Eltern</a></li>
-              <li><a href={`${siteBase}boulderhallen-finden/`} class="text-gray-400 hover:text-white no-underline transition-colors">Boulderhallen finden</a></li>
+            <ul class="space-y-2.5 text-sm">
+              <li><a href={`${siteBase}ab-welchem-alter/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Ab welchem Alter?</a></li>
+              <li><a href={`${siteBase}vorteile/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Vorteile für Kinder</a></li>
+              <li><a href={`${siteBase}ausruestung/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Ausrüstung</a></li>
+              <li><a href={`${siteBase}tipps-fuer-eltern/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Tipps für Eltern</a></li>
+              <li><a href={`${siteBase}boulderhallen-finden/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Boulderhallen finden</a></li>
             </ul>
           </div>
           <div>
-            <h3 class="font-bold text-lg mb-4">Mehr entdecken</h3>
-            <ul class="space-y-3 text-sm">
-              <li><a href="https://climbdirectory.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-white no-underline transition-colors flex items-center gap-2">
-                <span>🔍</span> ClimbDirectory – Hallen finden
-              </a></li>
-              <li><a href="https://berndbot.github.io/surprise-2026-01-29/" target="_blank" rel="noopener" class="text-gray-400 hover:text-white no-underline transition-colors flex items-center gap-2">
-                <span>⏱️</span> Hangboard Timer
-              </a></li>
+            <h3 class="font-bold text-lg mb-4">Links</h3>
+            <ul class="space-y-2.5 text-sm">
+              <li><a href="https://climbdirectory.com" target="_blank" rel="noopener" class="text-teal-200/80 hover:text-white no-underline transition-colors">ClimbDirectory – Kletterhallen finden</a></li>
+              <li><a href={`${siteBase}impressum/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Impressum</a></li>
+              <li><a href={`${siteBase}datenschutz/`} class="text-teal-200/80 hover:text-white no-underline transition-colors">Datenschutz</a></li>
             </ul>
             <div class="mt-6 pt-6 border-t border-gray-700">
               <ul class="flex gap-4 text-sm">
@@ -129,18 +123,30 @@ const siteBase = import.meta.env.BASE_URL;
             </div>
           </div>
         </div>
-        <div class="mt-10 pt-8 border-t border-gray-700 text-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Bouldern mit Kindern. Mit 💚 für kletterbegeisterte Familien.</p>
-          <p class="mt-2 text-xs">Bilder: Unsplash (CC0 Lizenz)</p>
+        <div class="mt-10 pt-8 border-t border-teal-700/50 text-center text-sm text-teal-300/60">
+          <p>&copy; {new Date().getFullYear()} Bouldern mit Kindern. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
 
     <script>
+      // Mobile menu toggle
       const toggle = document.getElementById('menu-toggle');
       const menu = document.getElementById('mobile-menu');
       toggle?.addEventListener('click', () => {
         menu?.classList.toggle('hidden');
+      });
+
+      // Header shadow on scroll
+      const header = document.getElementById('site-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          header?.classList.add('shadow-md', 'border-[var(--color-border)]');
+          header?.classList.remove('border-transparent');
+        } else {
+          header?.classList.remove('shadow-md', 'border-[var(--color-border)]');
+          header?.classList.add('border-transparent');
+        }
       });
     </script>
   </body>

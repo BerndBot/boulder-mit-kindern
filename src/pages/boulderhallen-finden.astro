@@ -19,28 +19,31 @@ const schema = {
   description="Finde die perfekte Boulderhalle für dein Kind! Tipps zur Hallenwahl und ein umfassendes Verzeichnis kinderfreundlicher Kletter- und Boulderhallen."
   schema={schema}
 >
-  <article class="max-w-4xl mx-auto px-4 py-12">
-    <nav class="text-sm text-[var(--color-text-light)] mb-6">
-      <a href={`${siteBase}`} class="hover:text-[var(--color-primary)]">Start</a>
-      <span class="mx-2">›</span>
-      <span>Boulderhallen finden</span>
-    </nav>
+  <div class="page-hero text-white py-16 md:py-20">
+    <div class="relative max-w-4xl mx-auto px-4">
+      <nav class="text-sm text-teal-200/80 mb-4">
+        <a href={`${siteBase}`} class="hover:text-white no-underline transition-colors">Start</a>
+        <span class="mx-2">›</span>
+        <span class="text-white">Boulderhallen finden</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Boulderhallen für Kinder finden</h1>
+      <p class="text-xl text-teal-100 mt-4 max-w-3xl leading-relaxed">
+        Die richtige Boulderhalle macht den Unterschied! Eine kinderfreundliche Halle kann darüber entscheiden, ob dein Kind den Sport liebt.
+      </p>
+    </div>
+  </div>
 
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Boulderhallen für Kinder finden</h1>
-
-    <p class="text-xl text-[var(--color-text-light)] mb-8">
-      Die richtige Boulderhalle macht den Unterschied! Eine kinderfreundliche Halle mit guten Angeboten kann darüber entscheiden, ob dein Kind den Sport liebt oder frustriert aufgibt. Hier erfährst du, wie du die perfekte Halle findest.
-    </p>
-
+  <article class="max-w-4xl mx-auto px-4 py-14">
     <!-- ClimbDirectory CTA -->
-    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl p-8 mb-12">
-      <div class="flex flex-col md:flex-row items-center gap-6">
+    <div class="relative overflow-hidden bg-gradient-to-br from-[#134e4a] to-[#0d9488] text-white rounded-2xl p-8 md:p-10 mb-14 shadow-xl">
+      <div class="absolute top-0 right-0 w-48 h-48 bg-amber-400/10 rounded-full blur-3xl"></div>
+      <div class="relative flex flex-col md:flex-row items-center gap-6">
         <div class="flex-1">
           <h2 class="text-2xl font-bold mb-3">📍 Boulderhalle in deiner Nähe finden</h2>
-          <p class="text-blue-100 mb-4">
-            Auf <strong>ClimbDirectory</strong> findest du das umfassendste Verzeichnis von Kletter- und Boulderhallen im deutschsprachigen Raum. Suche nach Standort, filtere nach Ausstattung und lies Bewertungen anderer Kletterer.
+          <p class="text-teal-100 mb-5 leading-relaxed">
+            Auf <strong>ClimbDirectory</strong> findest du das umfassendste Verzeichnis von Kletter- und Boulderhallen im deutschsprachigen Raum. Suche nach Standort, filtere nach Ausstattung und lies Bewertungen.
           </p>
-          <a href="https://climbdirectory.com" target="_blank" rel="noopener" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg no-underline transition-colors text-lg">
+          <a href="https://climbdirectory.com" target="_blank" rel="noopener" class="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold py-3 px-8 rounded-xl no-underline transition-all text-lg shadow-lg shadow-amber-500/25 hover:-translate-y-0.5">
             Jetzt auf ClimbDirectory suchen →
           </a>
         </div>
@@ -49,117 +52,121 @@ const schema = {
     </div>
 
     <div class="prose prose-lg max-w-none">
-      <h2 class="text-2xl font-bold mt-10 mb-4">Worauf du bei einer Boulderhalle für Kinder achten solltest</h2>
+      <h2 class="text-2xl font-bold mt-10 mb-4">Worauf du bei einer Boulderhalle achten solltest</h2>
 
       <h3 class="text-xl font-bold mt-8 mb-3">🧒 Kinderbereich</h3>
       <p>
-        Eine gute Kinder-Boulderhalle hat einen <strong>separaten Kinderbereich</strong>. Dieser sollte:
+        Eine gute Kinder-Boulderhalle hat einen <strong>separaten Kinderbereich</strong>:
       </p>
       <ul class="list-disc pl-6 space-y-2">
-        <li>Niedrigere Wände haben (2–3 Meter statt 4–5 Meter)</li>
-        <li>Kindgerechte Griffe bieten (größer, bunter, leichter zu greifen)</li>
-        <li>Vom Erwachsenenbereich abgetrennt oder geschützt sein</li>
-        <li>Extra dicke und weiche Matten haben</li>
-        <li>Bunte Gestaltung und spielerische Elemente bieten</li>
+        <li>Niedrigere Wände (2–3 Meter statt 4–5 Meter)</li>
+        <li>Kindgerechte Griffe (größer, bunter, leichter zu greifen)</li>
+        <li>Vom Erwachsenenbereich abgetrennt oder geschützt</li>
+        <li>Extra dicke und weiche Matten</li>
+        <li>Bunte Gestaltung und spielerische Elemente</li>
       </ul>
-      <p>
-        Nicht jede Halle hat einen dedizierten Kinderbereich. Auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> kannst du gezielt nach Hallen mit Kinderbereichen suchen.
-      </p>
 
       <h3 class="text-xl font-bold mt-8 mb-3">📚 Kursangebote</h3>
-      <p>
-        Regelmäßige <strong>Kletterkurse für Kinder</strong> sind ein großes Plus. Achte auf:
-      </p>
       <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Schnupperkurse:</strong> Ideal für den Einstieg, meist 1–2 Stunden</li>
+        <li><strong>Schnupperkurse:</strong> Ideal für den Einstieg, 1–2 Stunden</li>
         <li><strong>Regelmäßige Kinderkurse:</strong> Wöchentliche Gruppen nach Alter und Niveau</li>
-        <li><strong>Kindergeburtstage:</strong> Viele Hallen bieten Boulder-Geburtstage an</li>
+        <li><strong>Kindergeburtstage:</strong> Boulder-Geburtstage sind ein Hit!</li>
         <li><strong>Ferienkurse:</strong> Ganztägige Programme in den Schulferien</li>
-        <li><strong>Qualifizierte Trainer:</strong> Achte auf ausgebildete Klettertrainer mit Erfahrung im Kindersport</li>
+        <li><strong>Qualifizierte Trainer:</strong> Ausgebildete Klettertrainer mit Kindererfahrung</li>
       </ul>
 
       <h3 class="text-xl font-bold mt-8 mb-3">💰 Preise und Angebote</h3>
-      <p>
-        Die Preise für <strong>Kinder in Boulderhallen</strong> variieren je nach Region und Halle. Typische Preisspannen:
-      </p>
-      <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Tageseintritt Kind:</strong> 5–10 €</li>
-        <li><strong>Tageseintritt Erwachsener:</strong> 10–16 €</li>
-        <li><strong>Familientageskarte:</strong> 25–40 € (2 Erwachsene + 2 Kinder)</li>
-        <li><strong>Leihschuhe:</strong> 2–4 €</li>
-        <li><strong>10er-Karte Kind:</strong> 40–80 €</li>
-        <li><strong>Kinderkurs (10 Einheiten):</strong> 80–150 €</li>
-      </ul>
-      <p>
-        <strong>Tipp:</strong> Viele Hallen bieten Probetrainings oder vergünstigte Erstbesuche an. Frag direkt nach oder schau auf der Webseite der Halle.
-      </p>
+      <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-5">
+          <p class="text-sm text-[var(--color-text-light)]">Tageseintritt Kind</p>
+          <p class="font-bold text-lg text-[var(--color-text)]">5–10 €</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-5">
+          <p class="text-sm text-[var(--color-text-light)]">Tageseintritt Erwachsener</p>
+          <p class="font-bold text-lg text-[var(--color-text)]">10–16 €</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-5">
+          <p class="text-sm text-[var(--color-text-light)]">Familientageskarte</p>
+          <p class="font-bold text-lg text-[var(--color-text)]">25–40 €</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-5">
+          <p class="text-sm text-[var(--color-text-light)]">Leihschuhe</p>
+          <p class="font-bold text-lg text-[var(--color-text)]">2–4 €</p>
+        </div>
+      </div>
 
       <h3 class="text-xl font-bold mt-8 mb-3">🏗️ Ausstattung und Atmosphäre</h3>
-      <p>
-        Neben dem Kletterbereich sind auch diese Faktoren wichtig:
-      </p>
       <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Umkleiden:</strong> Gibt es Familienumkleiden?</li>
+        <li><strong>Umkleiden:</strong> Familienumkleiden?</li>
         <li><strong>Schließfächer:</strong> Für Wertsachen und Kleidung</li>
         <li><strong>Bistro/Café:</strong> Für die Pause zwischendurch</li>
-        <li><strong>Sitzmöglichkeiten:</strong> Für begleitende Eltern, die gerade nicht klettern</li>
-        <li><strong>Parkplätze:</strong> Besonders wichtig, wenn man Kleinkinder und Ausrüstung transportiert</li>
-        <li><strong>ÖPNV-Anbindung:</strong> Für den umweltfreundlichen Weg zur Halle</li>
+        <li><strong>Sitzmöglichkeiten:</strong> Für begleitende Eltern</li>
+        <li><strong>Parkplätze:</strong> Besonders mit Kleinkindern und Ausrüstung wichtig</li>
+        <li><strong>ÖPNV-Anbindung:</strong> Für den umweltfreundlichen Weg</li>
       </ul>
 
-      <h2 class="text-2xl font-bold mt-10 mb-4">So findest du die beste Halle in deiner Region</h2>
+      <h2 class="text-2xl font-bold mt-14 mb-4">So findest du die beste Halle</h2>
 
       <h3 class="text-xl font-bold mt-8 mb-3">🔍 Online-Suche</h3>
       <p>
-        Der einfachste Weg, eine <strong>Boulderhalle für Kinder</strong> zu finden, ist die Online-Suche. Das <a href="https://climbdirectory.com" target="_blank" rel="noopener">Hallenverzeichnis von ClimbDirectory</a> ist dafür die beste Anlaufstelle: Hier findest du tausende Kletter- und Boulderhallen mit detaillierten Informationen zu Ausstattung, Öffnungszeiten und Bewertungen.
-      </p>
-      <p>
-        Alternativ kannst du auch nach "Boulderhalle + [deine Stadt]" googeln oder auf Social Media nach lokalen Klettergruppen suchen.
+        Das <a href="https://climbdirectory.com" target="_blank" rel="noopener">Hallenverzeichnis von ClimbDirectory</a> ist die beste Anlaufstelle: Tausende Kletter- und Boulderhallen mit detaillierten Informationen zu Ausstattung, Öffnungszeiten und Bewertungen.
       </p>
 
       <h3 class="text-xl font-bold mt-8 mb-3">👥 Empfehlungen einholen</h3>
       <p>
-        Frag andere Eltern in deinem Umfeld, ob sie Erfahrungen mit Boulderhallen haben. In Eltern-Foren, Facebook-Gruppen oder bei der Schule/Kita findest du oft wertvolle Tipps von Familien, die schon bouldern gehen.
+        Frag andere Eltern in deinem Umfeld. In Eltern-Foren, Facebook-Gruppen oder bei der Schule/Kita findest du oft wertvolle Tipps.
       </p>
 
       <h3 class="text-xl font-bold mt-8 mb-3">🎯 Probetag machen</h3>
       <p>
-        Bevor du eine Mitgliedschaft abschließt oder eine 10er-Karte kaufst: Mach einen Probetag! So könnt ihr die Atmosphäre testen, den Kinderbereich ausprobieren und schauen, ob euer Kind sich wohlfühlt.
+        Bevor du eine Mitgliedschaft abschließt: Mach einen Probetag! So könnt ihr die Atmosphäre testen und schauen, ob euer Kind sich wohlfühlt.
       </p>
 
-      <h2 class="text-2xl font-bold mt-10 mb-4">Boulderhallen in großen Städten</h2>
-      <p>
-        In den meisten deutschen Großstädten gibt es mittlerweile mehrere Boulderhallen. Hier eine Übersicht der Boulder-Hochburgen:
-      </p>
-      <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Berlin:</strong> Boulderklub, Südbloc, Bright Site, Der Kegel – und viele mehr</li>
-        <li><strong>München:</strong> Boulderwelt, Einstein Boulder, DAV Kletterzentrum</li>
-        <li><strong>Hamburg:</strong> Nordwandhalle, Flashh Bouldering</li>
-        <li><strong>Köln:</strong> Stuntwerk, Kletterfabrik</li>
-        <li><strong>Frankfurt:</strong> Boulderplanet, T-Hall</li>
-        <li><strong>Stuttgart:</strong> Waldau Bouldering, Rockerei</li>
-      </ul>
-      <p>
-        Egal wo du wohnst – auf <a href="https://climbdirectory.com" target="_blank" rel="noopener">ClimbDirectory</a> findest du alle Kletter- und Boulderhallen in deiner Nähe, inklusive Bewertungen und Ausstattungsdetails.
-      </p>
+      <h2 class="text-2xl font-bold mt-14 mb-4">Boulderhallen in großen Städten</h2>
+      <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 my-6">
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-4">
+          <p class="font-bold text-[var(--color-text)]">🏙️ Berlin</p>
+          <p class="text-sm text-[var(--color-text-light)]">Boulderklub, Südbloc, Bright Site, Der Kegel</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-4">
+          <p class="font-bold text-[var(--color-text)]">🏔️ München</p>
+          <p class="text-sm text-[var(--color-text-light)]">Boulderwelt, Einstein Boulder, DAV Kletterzentrum</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-4">
+          <p class="font-bold text-[var(--color-text)]">⚓ Hamburg</p>
+          <p class="text-sm text-[var(--color-text-light)]">Nordwandhalle, Flashh Bouldering</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-4">
+          <p class="font-bold text-[var(--color-text)]">🎭 Köln</p>
+          <p class="text-sm text-[var(--color-text-light)]">Stuntwerk, Kletterfabrik</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-4">
+          <p class="font-bold text-[var(--color-text)]">🏦 Frankfurt</p>
+          <p class="text-sm text-[var(--color-text-light)]">Boulderplanet, T-Hall</p>
+        </div>
+        <div class="bg-white border border-[var(--color-border)] rounded-xl p-4">
+          <p class="font-bold text-[var(--color-text)]">🚗 Stuttgart</p>
+          <p class="text-sm text-[var(--color-text-light)]">Waldau Bouldering, Rockerei</p>
+        </div>
+      </div>
 
-      <h2 class="text-2xl font-bold mt-10 mb-4">Outdoor-Bouldern mit Kindern</h2>
+      <h2 class="text-2xl font-bold mt-14 mb-4">Outdoor-Bouldern mit Kindern</h2>
       <p>
-        Neben der Halle gibt es auch die Möglichkeit, draußen zu bouldern. An natürlichen Felsen zu klettern ist ein ganz besonderes Erlebnis für Kinder. Allerdings erfordert Outdoor-Bouldern mehr Erfahrung und Vorbereitung:
+        An natürlichen Felsen zu klettern ist ein besonderes Erlebnis, erfordert aber mehr Erfahrung:
       </p>
       <ul class="list-disc pl-6 space-y-2">
-        <li><strong>Crashpads:</strong> Eigene Matten müssen mitgebracht werden</li>
+        <li><strong>Crashpads:</strong> Eigene Matten mitbringen</li>
         <li><strong>Spotten:</strong> Besonders wichtig bei unebenem Untergrund</li>
-        <li><strong>Schwierigkeitseinschätzung:</strong> Outdoor-Boulder können anders bewertet sein als in der Halle</li>
-        <li><strong>Naturschutz:</strong> Respektiere die Natur und beachte lokale Kletterregelungen</li>
+        <li><strong>Schwierigkeit:</strong> Outdoor-Boulder können anders bewertet sein</li>
+        <li><strong>Naturschutz:</strong> Natur respektieren und lokale Regeln beachten</li>
       </ul>
       <p>
-        Für den Einstieg empfehlen wir aber definitiv die <strong>Boulderhalle</strong> – sie bietet die sicherste und kontrollierteste Umgebung für Kinder.
+        Für den Einstieg empfehlen wir die <strong>Boulderhalle</strong> – die sicherste Umgebung für Kinder.
       </p>
 
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mt-8">
-        <h3 class="text-lg font-bold mb-2">🎯 Checkliste: Die perfekte Kinderhalle</h3>
-        <ul class="list-none space-y-1 text-[var(--color-text-light)]">
+      <div class="highlight-box mt-10">
+        <h3 class="text-lg font-bold mb-3">🎯 Checkliste: Die perfekte Kinderhalle</h3>
+        <ul class="list-none space-y-1.5 text-[var(--color-text-light)]">
           <li>✅ Separater Kinderbereich vorhanden</li>
           <li>✅ Kinderkurse im Angebot</li>
           <li>✅ Leihschuhe in Kindergrößen</li>
@@ -172,23 +179,28 @@ const schema = {
       </div>
     </div>
 
-    <!-- Second ClimbDirectory CTA -->
-    <div class="mt-12 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-2xl p-8 text-center">
-      <h2 class="text-2xl font-bold mb-3">Bereit, eine Halle zu finden?</h2>
-      <p class="text-amber-100 mb-6 max-w-2xl mx-auto">
-        Durchsuche das umfassende Verzeichnis auf ClimbDirectory und finde die perfekte Boulderhalle für dein nächstes Familienabenteuer.
-      </p>
-      <a href="https://climbdirectory.com" target="_blank" rel="noopener" class="inline-block bg-white text-amber-600 font-bold py-3 px-8 rounded-lg no-underline hover:bg-amber-50 transition-colors text-lg">
-        ClimbDirectory – Hallen entdecken →
-      </a>
+    <!-- Second CTA -->
+    <div class="mt-14 relative overflow-hidden bg-gradient-to-r from-amber-500 to-amber-400 text-white rounded-2xl p-8 md:p-10 text-center shadow-xl">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute -top-20 -right-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+      </div>
+      <div class="relative">
+        <h2 class="text-2xl font-bold mb-3">Bereit, eine Halle zu finden?</h2>
+        <p class="text-amber-100 mb-6 max-w-2xl mx-auto leading-relaxed">
+          Durchsuche das umfassende Verzeichnis auf ClimbDirectory und finde die perfekte Boulderhalle für euer Familienabenteuer.
+        </p>
+        <a href="https://climbdirectory.com" target="_blank" rel="noopener" class="inline-block bg-white text-amber-600 font-bold py-3 px-8 rounded-xl no-underline hover:bg-amber-50 transition-all text-lg shadow-lg hover:-translate-y-0.5">
+          ClimbDirectory – Hallen entdecken →
+        </a>
+      </div>
     </div>
 
-    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <a href={`${siteBase}tipps-fuer-eltern/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+    <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href={`${siteBase}tipps-fuer-eltern/`} class="block bg-white border border-[var(--color-border)] rounded-2xl p-6 no-underline card-hover">
         <span class="text-sm text-[var(--color-text-light)]">← Vorheriger Artikel</span>
         <span class="block font-bold text-[var(--color-text)] mt-1">Tipps für Eltern</span>
       </a>
-      <a href={`${siteBase}vorteile/`} class="block bg-[var(--color-bg-alt)] rounded-lg p-5 no-underline hover:shadow-md transition-shadow">
+      <a href={`${siteBase}vorteile/`} class="block bg-white border border-[var(--color-border)] rounded-2xl p-6 no-underline card-hover">
         <span class="text-sm text-[var(--color-text-light)]">Auch interessant →</span>
         <span class="block font-bold text-[var(--color-text)] mt-1">Vorteile des Boulderns</span>
       </a>
